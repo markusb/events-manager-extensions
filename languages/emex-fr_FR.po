@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Events manage Extensions\n"
+"POT-Creation-Date: 2022-07-18 12:00+0200\n"
+"PO-Revision-Date: 2022-07-18 12:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ../emex-dashboard.php:35
+msgid "Upcoming events"
+msgstr "événements à venir"
+
+#: ../emex-dashboard.php:38 ../emex-dashboard.php:61
+msgid "Date"
+msgstr "date"
+
+#: ../emex-dashboard.php:38 ../emex-dashboard.php:61
+msgid "Event"
+msgstr "événément"
+
+#: ../emex-dashboard.php:38
+msgid "(Res/Tot)"
+msgstr "(rés/tot)"
+
+#: ../emex-dashboard.php:58
+msgid "Bookings in need of attention:"
+msgstr "résérvations nécessitent une attention"
+
+#: ../emex-dashboard.php:61
+msgid "ResDate"
+msgstr "date rés"
+
+#: ../emex-dashboard.php:61
+msgid "Name"
+msgstr "nom"
+
+#: ../emex-dashboard.php:61
+msgid "Spaces"
+msgstr "places"
+
+#: ../emex-dashboard.php:61
+msgid "Amount"
+msgstr "montant"
+
+#: ../emex-dashboard.php:70
+msgid "No booking in need of attention found"
+msgstr "aucune résérvation nécessitent une attention trouvée"
