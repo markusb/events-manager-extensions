@@ -14,6 +14,7 @@ wp_add_dashboard_widget('custom_help_widget', 'Events Manager', 'emex_dashboard_
  
 function emex_dashboard_content() {
 
+    $dbnumevents = get_option('emex_dbnumevents','5');
     // sql to get list of future events
     $sql = "SELECT event_id,event_start_date,event_name,event_spaces 
             FROM wp_em_events AS e
@@ -22,7 +23,7 @@ function emex_dashboard_content() {
                 AND event_status = '1'
                 AND recurrence = '0'
             ORDER by event_start_date
-	    LIMIT 5;";
+	    LIMIT ".$dbnumevents.";";
     // sql to get number of booked spaces per event
     $sql1 = "SELECT SUM(booking_spaces) AS sum
              FROM wp_em_bookings
