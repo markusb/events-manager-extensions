@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Events manage Extensions\n"
-"POT-Creation-Date: 2022-07-18 12:00+0200\n"
-"PO-Revision-Date: 2022-07-18 12:01+0200\n"
+"POT-Creation-Date: 2022-07-18 12:15+0200\n"
+"PO-Revision-Date: 2022-07-18 12:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -56,3 +56,11 @@ msgstr "montant"
 #: ../emex-dashboard.php:70
 msgid "No booking in need of attention found"
 msgstr "aucune résérvation nécessitent une attention trouvée"
+
+#: ../emex-shortcodes.php:31
+msgid "No registration for this event"
+msgstr "aucune inscription pour cet événement"
+
+#: ../emex-shortcodes.php:34
+msgid "You need to be logged in to see participants"
+msgstr "faut être connecté pour voir les participants"

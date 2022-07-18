@@ -28,10 +28,10 @@ function emex_shortcodes_init(){
             foreach($dbresult as $row) {
                 $list = $list."<br>".$row->display_name;
             }
-            if($list == "") { $list = "Aucune inscription"; }
+            if($list == "") { $list = __("No registration for this event","emex"); }
             return $list;
         } else {
-            return "Faut être connecté pour voir les participants";
+            return __("You need to be logged in to see participants","emex");
         }
     }
 }
