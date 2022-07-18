@@ -59,7 +59,7 @@ function emex_dashboard_content() {
                $row->event_start_date,$row->event_name,$a,$row->booking_date,$row->display_name,$row->booking_spaces,$row->booking_price);
 // https://encordages-lemaniques.ch/wp-admin/edit.php?post_type=event&page=events-manager-bookings&event_id=111&booking_id=341
     }
-    if ($rowfound==0) { echo "<tr><td colspan=6>Aucune</td></tr>"; }
+    if ($rowfound==0) { echo "<tr><td colspan=6>".__("No found")."</td></tr>"; }
     echo '</table>';
 }
 
