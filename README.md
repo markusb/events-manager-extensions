@@ -15,3 +15,9 @@ Panel in the Wordpress dashboard
 
 * list the upcoming events with reservations and shows the taken and available spaces
 * list the reservations where an action is required
+
+## Todo
+
+* Configuration page
+  * Number of events to show in dashboard panel
+  * Enable link to Events Manager in top row
