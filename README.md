@@ -5,7 +5,7 @@ Some useful extensions for Wordpress Events Manager
 
 ## Shortcodes
 
-* [emex_partlist] returns the list of participants of the event
+* [emex_participant_list] returns the list of participants of the event
   * only works on an event page
   * limited to logged-in users
 
