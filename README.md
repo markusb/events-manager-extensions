@@ -16,6 +16,16 @@ Panel in the Wordpress dashboard
 * list the upcoming events with reservations and shows the taken and available spaces
 * list the reservations where an action is required
 
+## Installation Instructions
+
+* Download the code
+* Create the folder/directory wp-content/plugins/events-manager-extensions
+* Copy the files from the events-manager-extensions-main in the archive into the wp-content/plugins/events-manager-extensions folder of your wordpress installation
+* Go to your wordpress plugin mangement page and enable the Events Manager Extensions
+
+If the Events Manager Extensions do not show up in the plugins folder, then you did not correctly place the plugin files in the folder.
+
+
 ## Todo
 
 * Configuration page
