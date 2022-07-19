@@ -3,6 +3,10 @@ Extensions for Wordpress Events Manager
 
 Some useful extensions for Wordpress Events Manager
 
+## Prerequisites
+
+This code requires Wordpress Events Manager (https://wordpress.org/plugins/events-manager/). It should work with the free and the pro version of Events Manager. Have tested it with the Pro version.
+
 ## Shortcodes
 
 * [emex_participant_list] returns the list of participants of the event
@@ -19,8 +23,8 @@ Panel in the Wordpress dashboard
 ## Installation Instructions
 
 * Download the code
-* Create the folder/directory wp-content/plugins/events-manager-extensions
-* Copy the files from the events-manager-extensions-main in the archive into the wp-content/plugins/events-manager-extensions folder of your wordpress installation
+* Create the folder/directory wp-content/plugins/events-manager-extensions in your Wordpress installation
+* Copy the files from events-manager-extensions-main in the archive into the wp-content/plugins/events-manager-extensions folder of your wordpress installation
 * Go to your wordpress plugin mangement page and enable the Events Manager Extensions
 
 If the Events Manager Extensions do not show up in the plugins folder, then you did not correctly place the plugin files in the folder.
