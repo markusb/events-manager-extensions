@@ -18,17 +18,24 @@ require_once plugin_dir_path(__FILE__) . 'emex-shortcodes.php';
 
 require_once plugin_dir_path(__FILE__) . 'emex-dashboard.php';
 
-// Add a new top level menu link to the ACP
-function emex_Add_My_Admin_Link()
-{
-      add_menu_page(
-        'Events manager Extensions', // Title of the page
-        'Events Manager Extentions', // Text to show on the menu link
-        'manage_options', // Capability requirement to see the link
-        'emex-admin-page.php' // The 'slug' - file to display when clicking the link
-    );
-}
-// Hook the 'admin_menu' action hook, run the function named 'mfp_Add_My_Admin_Link()'
-#add_action( 'admin_menu', 'emex_Add_My_Admin_Link' );
+if ( is_admin() ) { // admin actions
 
+    // Add a new top level menu link to the ACP
+    function emex_add_admin_page() {
+        add_submenu_page( 
+            'edit.php?post_type=event', //emex-admin-page.php',
+            __('Events Manager Extensions','emex'),
+            __('Events Manager Extentions','emex'), 
+            'manage_options' , 
+            '../wp-content/plugins/events-manager-extensions/emex-admin-page.php');
+    }
+    add_action( 'admin_menu', 'emex_add_admin_page' );
+
+    function register_emex_settings() { // whitelist options
+        register_setting( 'emex', 'emex_dbnumevents' );
+        register_setting( 'emex', 'some_other_option' );
+        register_setting( 'emex', 'option_etc' );
+    }
+    add_action('admin_init', 'register_emex_settings');
+}
 
