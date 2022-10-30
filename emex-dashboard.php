@@ -18,7 +18,7 @@ function emex_dashboard_content() {
     // sql to get list of future events
     $sql = "SELECT event_id,event_start_date,event_name,event_spaces 
             FROM wp_em_events AS e
-            WHERE event_start_date > curdate() 
+            WHERE event_start_date >= curdate() 
                 AND event_rsvp > '0'
                 AND event_status = '1'
                 AND recurrence = '0'
